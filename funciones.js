@@ -1,20 +1,19 @@
 var ecuanción_id = document.getElementById("ecuanción_text"); 
+var resultado_id = document.getElementById("resultado");
 
-function Y_return(x, formula) {
-    a = (5 * x) - 2;
-    b = x -2;
-    y = a / b;
-    
+function Y_return(x,  formula) {
+    formula = formula.replace("x", x);
+    formula = formula.replace("x", x);
+
+    eval(formula);
     console.log(`${x} ==> ${y}`);
     console.log(`(${x},${y})`);
     console.log(`y = ${y}`);
     return y;
 };
-suma = (2+3) 
-Y = Math.pow(suma, 2);
 
 
-var Array_X = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var Array_X = [-5, -4, -3, -2, -1, 0, 1, 3, 4, 5];
 var Array_Y = [];
 
 var largo = Array_X.length;
@@ -33,10 +32,13 @@ function imprimir() {
     document.write("</table>");
 };
 
+
 var i = 0;
 function operación() {
     document = "";
     ecuanción = ecuanción_id.value;
+    ecuanción = ecuanción.replace("raiz", "Math.sqrt");
+    ecuanción = ecuanción.replace("raiz", "Math.sqrt");
     while (i < largo) {
         X = Array_X[i];
         Y =Y_return(X, ecuanción);

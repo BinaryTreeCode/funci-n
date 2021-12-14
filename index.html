@@ -5,10 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* aumenta el tamaño todo en un 200% */
+        body {
+            font-size: 200%;
+            margin-bottom: 200px;
+        }
+        body select{
+            font-size: 60%;
+        }
+        body input{
+            font-size: 60%;
+        }
+        body button{
+            font-size: 60%;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="ecuanción_text">
-    <button onclick="operación()">play</button>
+    <p>lea con atención las intruciones</p>
+    <figure>
+        <img src="./funcion.svg" alt="instruciones">
+    </figure>
+    <form action="">
+        <label for="type_función">
+            <samp>escoja el tipo de función</samp>
+            <select id="type_función">
+                <option value="true">algebraica</option>
+                <option value="true">polinómica</option>
+                <option value="false">racional</option>
+            </select>
+        </label>
+        <br>
+        <label for="ecuanción_text">
+            <samp>escriba la ecuación</samp>
+            <input type="text" id="ecuanción_text" placeholder="y=x+2">
+        </label>
+        <label for="btn">
+            <button type="button" onclick="operación()" id="btn">play</button>
+        </label>
+    </form>
+    <div id="resultado"></div>
     <script src="./funciones.js"></script>
 </body>
 </html>
