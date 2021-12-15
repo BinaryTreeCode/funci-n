@@ -94,3 +94,82 @@ selectElement.addEventListener('change', () => {
         div2.style.display = "none";
     }
 });
+
+
+
+
+
+
+
+
+
+
+a = "x-2";
+largo = a.length;
+a = a.replace("x", "")
+
+
+x = 2
+if (x == Number(x)) {
+    console.log("x")
+}
+else {
+    console.log("no x")
+}
+
+
+
+
+function quitar_x(a, b) {
+    i = 0;
+    while (i <= largo) {
+        largo = a.length-1;
+        r = a.charAt(i);
+        x1 = a.charAt(i - 1);
+        x2 = a.charAt(i + 1);
+
+        true1 = (r == "*" || r == "/");
+        true2 = (x1 == "x" || x2 == "x");
+
+        if (true1 && true2 == true) {
+            a = a.replace(r, "");
+        }
+        else {
+        }
+        console.log(`el caracter a eliminar es:${r} x1:${x1} x2:${x2} y  true(s) 1:${true1} 2:${true2} a es: ${a} `);
+        i++;
+    }
+    return a = a;
+}
+
+function puente(a) {
+    i = 0;
+    largo = a.length;
+    while (i <= largo) {
+        largo = a.length;
+        r = a.charAt(i);
+        x1 = a.charAt(i - 1);
+        x2 = a.charAt(i + 1);
+
+        Array_op = ["+", "-", "*", "/"];
+        true2 = (x1 == Number(x1) && x2 == Number(x2));
+
+        if (r == "-") {
+            v = "";
+        } else if (r == "+") {
+            v = "-";
+        } else if (r == "/") {
+            v = "*";
+        } else if (r == "*") {
+            v = "/";
+        }
+        if (true1 && true2 == true) {
+            a = a.replace(r, v);
+        }
+        else {
+        }
+        console.log(`el caracter a eliminar es:${r} x1:${x1} x2:${x2} y  true(s) 1:${true1} 2:${true2} a es: ${a} `);
+        i++;
+    }
+}
+
