@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,29 @@
             font-size: 200%;
             margin-bottom: 200px;
         }
-        body select{
+
+        body select {
             font-size: 60%;
         }
-        body input{
+
+        body input {
             font-size: 60%;
         }
-        body button{
+
+        body button {
             font-size: 60%;
+        }
+
+        body img {
+            min-width: 250px;
+        }
+
+        #input_2{
+            display: none;
         }
     </style>
 </head>
+
 <body>
     <p>lea con atención las intruciones</p>
     <figure>
@@ -30,22 +43,41 @@
     <form action="">
         <label for="type_función">
             <samp>escoja el tipo de función</samp>
-            <select id="type_función">
+            <select id="type_función" class="selector">
                 <option value="true">algebraica</option>
                 <option value="true">polinómica</option>
                 <option value="false">racional</option>
             </select>
         </label>
-        <br>
-        <label for="ecuanción_text">
-            <samp>escriba la ecuación</samp>
-            <input type="text" id="ecuanción_text" placeholder="y=x+2">
-        </label>
-        <label for="btn">
-            <button type="button" onclick="operación()" id="btn">play</button>
-        </label>
     </form>
-    <div id="resultado"></div>
+    <div id="input_1">
+        <form action="">
+            <label for="ecuanción_text_1">
+                <samp>escriba la ecuación segun las intruciones</samp>
+                <input type="text" id="ecuanción_text_1" placeholder=" y = raiz(((5+x)**2)/2-x)">
+            </label>
+            <label for="btn">
+                <button type="button" onclick="operación()" id="btn">play</button>
+            </label>
+        </form>
+    </div>
+
+    <div id="input_2">
+        <form action="">
+            <label for="ecuanción_text_2">
+                <samp >escriba la ecuación segun las intruciones <br> x debe tener el mismo exponente y tener raiz</samp>
+                <br>
+                <input type="text" id="ecuanción_text_2.1" placeholder=" y = raiz(((5+x)**2)">÷
+                <input type="text" id="ecuanción_text_2.2" placeholder=" /2-x)">
+            </label>
+            <label for="btn">
+                <button type="button" onclick="operación()" id="btn">play</button>
+            </label>
+        </form>
+    </div>
+    
+
     <script src="./funciones.js"></script>
 </body>
+
 </html>
