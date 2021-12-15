@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* aumenta el tamaño todo en un 200% */
+        body {
+            font-size: 200%;
+            margin-bottom: 200px;
+        }
+        body select{
+            font-size: 60%;
+        }
+        body input{
+            font-size: 60%;
+        }
+        body button{
+            font-size: 60%;
+        }
+    </style>
+</head>
+<body>
+    <p>lea con atención las intruciones</p>
+    <figure>
+        <img src="./funcion.svg" alt="instruciones">
+    </figure>
+    <form action="">
+        <br>
+        <label for="ecuanción_text">
+            <samp>escriba la ecuación</samp>
+            <input type="text" id="ecuanción_text" placeholder="y=x+2">
+        </label>
+        <label for="btn">
+            <button type="button" onclick="operación()" id="btn">play</button>
+        </label>
+    </form>
+    <div id="resultado"></div>
+    <script src="./funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="239.43642mm"
+   height="121.50414mm"
+   viewBox="0 0 239.43642 121.50414"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="funcion.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.67081229"
+     inkscape:cx="488.95944"
+     inkscape:cy="166.21639"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect146035"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect145998"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect144817"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect144780"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect144677"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.613536,170.3396)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.57187;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect31"
+       width="235.86455"
+       height="117.93227"
+       x="43.399471"
+       y="-168.55367" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="57.578854"
+       y="-151.8584"
+       id="text10980"><tspan
+         sodipodi:role="line"
+         id="tspan10978"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-151.8584">Las ecuaciones deben escribirse de la siguiente manera</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-143.03896"
+         id="tspan49892"> y = raiz((5+x)**2), poniendo los exponetes como ** y las</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-134.2195"
+         id="tspan53298"> raizes como raiz(operación), las funciones deben escribirse </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-125.40005"
+         id="tspan74181">adentro hacia  fuera poniendo las operaciones que deben</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-116.5806"
+         id="tspan82649">realizarse primero entre parentesis: (1) suma (2)elevación </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-107.76115"
+         id="tspan157169">(3) división (4)raiz.</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-98.941696"
+         id="tspan121065" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="57.578854"
+         y="-90.122246"
+         id="tspan115153" /></text>
+    <g
+       id="g168808"
+       transform="translate(121.87874,-0.83669613)">
+      <g
+         id="g144602"
+         transform="matrix(1.1013329,0,0,1.6457331,14.31235,93.561909)"
+         style="stroke-width:0.742781">
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196527"
+           x="78.691467"
+           y="-110.00495"
+           id="text127552"><tspan
+             sodipodi:role="line"
+             id="tspan127550"
+             style="stroke-width:0.196527"
+             x="78.691467"
+             y="-110.00495">1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196527"
+           x="92.473511"
+           y="-110.14553"
+           id="text128092"><tspan
+             sodipodi:role="line"
+             id="tspan128090"
+             style="stroke-width:0.196527"
+             x="92.473511"
+             y="-110.14553">2</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196527"
+           x="110.4131"
+           y="-109.82132"
+           id="text129050"><tspan
+             sodipodi:role="line"
+             id="tspan129048"
+             style="stroke-width:0.196527"
+             x="110.4131"
+             y="-109.82132">3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196527"
+           x="56.446198"
+           y="-110.37912"
+           id="text132966"><tspan
+             sodipodi:role="line"
+             id="tspan132964"
+             style="stroke-width:0.196527"
+             x="56.446198"
+             y="-110.37912">4</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:9.49884px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+         x="64.489845"
+         y="-58.868561"
+         id="text142098"
+         transform="scale(0.81804952,1.2224199)"><tspan
+           sodipodi:role="line"
+           id="tspan142096"
+           style="stroke-width:0.264583"
+           x="64.489845"
+           y="-58.868561"> y = raiz(((5+x)**2)/2-x)</tspan></text>
+    </g>
+    <g
+       id="g168795"
+       transform="translate(-114.06957,0.27889864)">
+      <image
+         width="89.54911"
+         height="17.423119"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAZCAYAAADe+aeoAAAABHNCSVQICAgIfAhkiAAAAxlJREFU
+aIHtWjuu6jAQHZ5uh0THKtIjylRZgVfgBXg9LIAmEqJLQ5U6fUpWQE3t1zDIMf6MEztxEEeKdOEm
+eGY8nzPjbGAdkEsL8IMRm6UF8KJtWwk/B8oW/5YWwIfr9QpCiKXFiIq+7zEoJADI1+cfYqPrOgkA
+8pWFvglvnVDHnxMlAEbqFxp3oA860UKyTELWJezxeAAAwPP5XFiStDgcDvmT0TVCCCGFEMbIVHhE
+riBnzsAMlLPO+cDFf9ZQ2gJllC99nVhzqZsdtg3wbMwHOU0vqR0UJwrNPrqj/To6C3D+Y4hMa7Qy
+xuTxeJSMsTHGTGJ4l4Pg5lOyj8kZ9SztsFkyZEuicf6jEkw03na7dT672+2g6zooimJxcoqymjJp
+URTQ9z3q6Nx0bCRUnU6nEzDGoCzLDQBAWZYbIQScz+fIWmQMU4Ta+A8h3U+JvJRRO8gKqEdd1+qa
+vvWN2djy3OxlzMkrUi2KaZlzTuU5vvSc3IFQNiGEbJqGxD8Mjo8665dzTUpJ5pxjCZ8Mkq5aNIRE
+vMkArsv4G7iumm1c/MelsL4psTkQGrSu6zfPQhlTZscQos0Y+wjIMQjRVXZdJy2HlrMQMn3e45j/
+eNM8/jGCUFLuU50y9IhlUnYMafMj7VmwroOF55y1qJvtOf8KksUSjcYMWVUVOXOOtM0oO1LX8o03
+iFfw+n/qB7XjmfMYYb/fA8Cwu8LvpuByuZi+NnZmt9tN2v63JEzdlw61o7PcN4teAw9zHSMo90/l
+QAAAcL/f3/d4Sg+ZY7RtK6uqCuEDoRniLSPxWGVsJneWJEuGiF01SLrqZWO21yhUB/I4rsuYg4Ea
+51xyzmNyoEGJxU6H8jrG2Km4r3xYxgEwZi39+WBd9ZF4DCZPhebVVselTHXxEkKEkkkSxwAA2TQN
+OjmVC40itpTOzjIOmLR3E3UFMLX0KaEZymrsxMQ+ib4TZZ71WCIKljrpFkKo51gupDJqEn1Tla+c
+8DEgWkJoKuldk2GnyJrD2wQkZPY6AIm4r8GJIsi4vvKVAcgG+6Y3Em3PR5MkIf4D1l4YZGbSU8gA
+AAAASUVORK5CYII=
+"
+         id="image144510"
+         x="165.77951"
+         y="-90.781494"
+         style="stroke-width:0.401902" />
+      <g
+         id="g144620"
+         transform="matrix(1.0559061,0,0,1.1833476,132.60521,36.948423)"
+         style="stroke-width:0.894605">
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.236697"
+           x="68.239273"
+           y="-84.761925"
+           id="text144606"><tspan
+             sodipodi:role="line"
+             id="tspan144604"
+             style="stroke-width:0.236697"
+             x="68.239273"
+             y="-84.761925">1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.236697"
+           x="85.965546"
+           y="-109.94832"
+           id="text144610"><tspan
+             sodipodi:role="line"
+             id="tspan144608"
+             style="stroke-width:0.236697"
+             x="85.965546"
+             y="-109.94832">2</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.236697"
+           x="103.90514"
+           y="-88.719727"
+           id="text144614"><tspan
+             sodipodi:role="line"
+             id="tspan144612"
+             style="stroke-width:0.236697"
+             x="103.90514"
+             y="-88.719727">3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.236697"
+           x="55.854565"
+           y="-109.59028"
+           id="text144618"><tspan
+             sodipodi:role="line"
+             id="tspan144616"
+             style="stroke-width:0.236697"
+             x="55.854565"
+             y="-109.59028">4</tspan></text>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.236697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 74.151391,-89.139442 c 3.286802,-5.916245 6.573656,-11.832578 9.860558,-17.749008"
+           id="path144675"
+           inkscape:original-d="m 74.151391,-89.139442 c 3.287117,-5.91607 6.57397,-11.832408 9.860558,-17.749008"
+           inkscape:path-effect="#path-effect144677" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.236697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 91.703185,-110.04382 c 3.681495,4.93057 7.362771,9.86085 11.043825,14.790834"
+           id="path144778"
+           inkscape:original-d="m 91.703185,-110.04382 c 3.68154,4.93054 7.362815,9.86082 11.043825,14.790834"
+           inkscape:path-effect="#path-effect144780" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.236697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="M 102.94422,-91.308763 C 89.271233,-97.22496 75.597926,-103.1413 61.9243,-109.05777"
+           id="path144815"
+           inkscape:original-d="M 102.94422,-91.308763 C 89.271178,-97.224833 75.597871,-103.14117 61.9243,-109.05777"
+           inkscape:path-effect="#path-effect144817" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="58.847618"
+       y="-76.139336"
+       id="text147837"><tspan
+         sodipodi:role="line"
+         id="tspan147835"
+         style="stroke-width:0.264583"
+         x="58.847618"
+         y="-76.139336" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50.1166px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="158.30499"
+       y="-58.80254"
+       id="text169560"
+       transform="scale(0.88755267,1.1266937)"><tspan
+         sodipodi:role="line"
+         id="tspan169558"
+         style="stroke-width:0.264583"
+         x="158.30499"
+         y="-58.80254">=</tspan></text>
+  </g>
+</svg>
