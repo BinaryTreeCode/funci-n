@@ -3,24 +3,84 @@ var ecuanción1_id = document.getElementById("ecuanción_text_1");
 var ecuanción2_id_1 = document.getElementById("ecuanción_text_2.1");
 var ecuanción2_id_2 = document.getElementById("ecuanción_text_2.2");
 
-var resultado_id = document.getElementById("resultado");
+var resultado_id = document.getElementById("app");
 var modulo_id = document.getElementById("type_función");
 var y;
+
+var X_id = document.getElementById("xValues");
+
+
 function Y_return(x, formula) {
-    if (condition) {
+    formula = formula.replace("x", x);
+    formula = formula.replace("x", x);
+    formula = formula.replace("x", x);
+
+    e = 0;
+    largoText = formula.length;
+    while (e <= largoText) { //pasar numero a radianes para poder operar con Math.
+        charts = formula.charAt(e) + formula.charAt(e+1);
+        if (charts == "en" || charts == "os" || charts == "an") {
+            chartPos = formula.charAt(e+3);
+            if (chartPos == "-"){
+                chartPos = formula.substr(e+3, 2)
+
+                file = true;
+            }
+            else {
+                file = false;
+            }
+
+            // chartPos2 = formula.substr(e+3, 2);
+
+            // message = formula.replace(/((?:.*?chartPos2).*?){1}.*?)chartPos2/, "$1chao");
+
+            if (isNaN(chartPos) == false) {
+                chartPos = Number(chartPos);
+                chartPos = Math.radianes(chartPos);
+
+                if (file) {
+                    formula= formula.replace(formula.substr(e+3, 2), chartPos);  
+                } else {
+                    formula= formula.replace(formula.substr(e+3, 1), chartPos);
+                }
+                largoText = formula.length;
+            }
+        }
+        e++;
     }
-    formula = formula.replace("x", x);
-    formula = formula.replace("x", x);
+
+
+    formula = formula.replace("sen", "Math.sin");
+    formula = formula.replace("cos", "Math.cos");
+    formula = formula.replace("tan", "Math.tan");
+
+    if (formula[ formula.indexOf('cos')-1] != ".") {
+        formula = formula.replace("cos", "Math.cos");
+    }
+
+    if (formula[ formula.indexOf('tan')-1] != ".") {
+        formula = formula.replace("tan", "Math.tan");
+    }
+
+    if (formula[ formula.indexOf('sen')-1] != ".") {
+        formula = formula.replace("sen", "Math.sin");
+    }
+
     eval(formula);
     console.log(`${x} ==> ${y}`);
     console.log(`(${x},${y})`);
     console.log(`y = ${y}`);
-    return y;
+
+    return y.toFixed(5);
 };
 
-
-var Array_X = [-5, -4, -3, -2, -1, 0, 1, 3, 4, 5];
+var Array_X = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
 var Array_Y = [];
+
+X_id.addEventListener("change", function() {
+    Array_X = X_id.value.split(',').map(Number);
+  });
+
 
 var largo = Array_X.length;
 
@@ -33,17 +93,19 @@ function imprimir() {
     document.write("<thead> <th>X</th> <th>Y</th> <th>(x,y)</th> </thead>");
     document.write("<tbody>");
     i = 0;
-    while (i < largo) {
+    while (i <  Array_X.length) {
         document.write(`<tr> <td>${Array_X[i]}</td> <td>${Array_Y[i]}</td><td>(${Array_X[i]},${Array_Y[i]})</td> </tr>`);
         i++
     };
     document.write("</tbody>");
     document.write("</table>");
+    document.write(`<p>Grafica en: <iframe src="https://www.geogebra.org/geometry" width="1500" height="500"> <iframe> geogebra</p>`);
 };
 
 
 var i = 0;
 let ecuanción2, ecuación;
+
 function operación() {
     modulo = modulo_id.value;
     modulo = eval(modulo);
@@ -70,6 +132,9 @@ function operación() {
     }
     ecuación = ecuación.replace("raiz", "Math.sqrt");
     ecuación = ecuación.replace("raiz", "Math.sqrt");
+
+
+
     while (i < largo) {
         X = Array_X[i];
         Y = Y_return(X, ecuación);
@@ -77,6 +142,11 @@ function operación() {
         i++;
     };
     imprimir();
+}
+
+function replace(a, d) {
+    ecuación = ecuación.replace(a, d);
+    ecuación = ecuación.replace(a, d);
 }
 
 const selectElement = document.querySelector('.selector');
@@ -94,30 +164,6 @@ selectElement.addEventListener('change', () => {
         div2.style.display = "none";
     }
 });
-
-
-
-
-
-
-
-
-
-
-a = "x-2";
-largo = a.length;
-a = a.replace("x", "")
-
-
-x = 2
-if (x == Number(x)) {
-    console.log("x")
-}
-else {
-    console.log("no x")
-}
-
-
 
 
 function quitar_x(a, b) {
@@ -173,3 +219,14 @@ function puente(a) {
     }
 }
 
+
+
+
+
+    Math.grados = function(radianes) {
+        return radianes * 180 / Math.PI;
+      };
+      
+      Math.radianes = function(grados) {
+        return grados * Math.PI / 180;
+      };
