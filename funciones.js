@@ -14,10 +14,13 @@ function operación() {
     modulo = eval(modulo);
     document = "";
 
-    ecuanción2 = {
-        ecuanción2_1: ecuanción2_id_1.value,
-        ecuanción2_2: ecuanción2_id_2.value
-    }
+    var ecuanción2_1= ecuanción2_id_1.value;
+    var ecuanción2_2= ecuanción2_id_2.value;
+
+    ecuanción2 = [
+        ecuanción2_1, 
+        ecuanción2_2
+    ];
 
     if (modulo == true) { //no es una ecuació racional (1/2)
 
@@ -26,31 +29,28 @@ function operación() {
     } else { //Si es una ecuació racional (1/2)
 
         ecuación = ecuanción2
-        i = 0;
 
-        a = ecuación.charAt(i);
-        while (a === '/') {
-            i++;
-            a = ecuación.charAt(i);
-        };
-        ecuación = ecuación.replace(a, "");
-        ecuación = ecuación.replace(" ", "");
-        ecuación = ecuación.replace(" ", "");
+        ecuación.forEach(element => {
+            element.replace(" ", "");
+            element.replace(" ", "");  
+        });
 
+        ecuación = `(${ecuación[0]})/(${ecuación[1]})`;
     }
     ecuación = ecuación.replace("raiz", "Math.sqrt");
     ecuación = ecuación.replace("raiz", "Math.sqrt");
 
 
-
-    while (i < largo) {
+    while (i < Array_X.length) {
         X = Array_X[i];
         Y = Y_return(X, ecuación);
         Array_Y.push(Y);
         i++;
+        console.log(`i value = ${i}, status = ${i < Array_X.length - 1}`);
     };
     imprimir();
 }
+
 
 function Y_return(x, formula) {
     formula = formula.replace("x", x);
@@ -107,8 +107,27 @@ function Y_return(x, formula) {
     if (formula[formula.indexOf('sen') - 1] != ".") {
         formula = formula.replace("sen", "Math.sin");
     }
+    
+    if (formula.includes('**')) {
 
-    eval(formula);
+        index_pow = formula.indexOf('**');
+        modulo_pow = formula.substring(0, index_pow);
+
+        if (modulo_pow.includes('-')) {
+
+            formula = formula.substring(0, index_pow - 2) + '' + formula.substring(index_pow - 1)
+
+        } 
+    }
+   
+
+
+
+    formula = formula.replace("y=", "");
+
+    let y;
+
+    y = eval(formula);
     console.log(`${x} ==> ${y}`);
     console.log(`(${x},${y})`);
     console.log(`y = ${y}`);
