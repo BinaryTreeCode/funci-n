@@ -14,11 +14,11 @@ function operación() {
     modulo = eval(modulo);
     document = "";
 
-    var ecuanción2_1= ecuanción2_id_1.value;
-    var ecuanción2_2= ecuanción2_id_2.value;
+    var ecuanción2_1 = ecuanción2_id_1.value;
+    var ecuanción2_2 = ecuanción2_id_2.value;
 
     ecuanción2 = [
-        ecuanción2_1, 
+        ecuanción2_1,
         ecuanción2_2
     ];
 
@@ -32,7 +32,7 @@ function operación() {
 
         ecuación.forEach(element => {
             element.replace(" ", "");
-            element.replace(" ", "");  
+            element.replace(" ", "");
         });
 
         ecuación = `(${ecuación[0]})/(${ecuación[1]})`;
@@ -107,7 +107,7 @@ function Y_return(x, formula) {
     if (formula[formula.indexOf('sen') - 1] != ".") {
         formula = formula.replace("sen", "Math.sin");
     }
-    
+
     if (formula.includes('**')) {
 
         index_pow = formula.indexOf('**');
@@ -117,9 +117,9 @@ function Y_return(x, formula) {
 
             formula = formula.substring(0, index_pow - 2) + '' + formula.substring(index_pow - 1)
 
-        } 
+        }
     }
-   
+
 
 
 
@@ -132,7 +132,17 @@ function Y_return(x, formula) {
     console.log(`(${x},${y})`);
     console.log(`y = ${y}`);
 
-    return y.toFixed(5);
+    y = y.toFixed(5);
+
+    if (y % 1 === 0) {
+        y = parseInt(y)
+    }
+    else {
+        y = parseFloat(y)
+        y = y.toFixed(2);
+    }
+
+    return y
 };
 
 var Array_X = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
@@ -155,13 +165,37 @@ function imprimir() {
     document.write("<tbody>");
     i = 0;
     while (i < Array_X.length) {
-        document.write(`<tr> <td>${Array_X[i]}</td> <td>${Array_Y[i]}</td><td>(${Array_X[i]},${Array_Y[i]})</td> </tr>`);
+        document.write(`<tr> <td>${Array_X[i]}</td> <td>${Array_Y[i]}</td><td class="celda_XY">(${Array_X[i]},${Array_Y[i]})</td> </tr>`);
         i++
     };
     document.write("</tbody>");
     document.write("</table>");
-    document.write(`<p>Grafica en: <iframe src="https://www.geogebra.org/geometry" width="1500" height="500"> <iframe> geogebra</p>`);
+    document.write(`<p>Grafica en: <a href="https://www.geogebra.org/geometry"> geogebra</a> <iframe src="https://www.geogebra.org/geometry" width="1500" height="500"> <iframe> geogebra</p>`);
+
+    celdas = document.querySelectorAll('.celda_XY');
+
+    celdas.forEach((celda) => {
+        celda.addEventListener('click', () => {
+            const texto = celda.textContent;
+            copiarAlPortapapeles(texto);
+        });
+    });
 };
+
+function copiarAlPortapapeles(texto) {
+    navigator.clipboard.writeText(texto)
+        .then(() => {
+            console.log('Texto copiado al portapapeles');
+        })
+        .catch(err => {
+            console.error('Error al copiar el texto: ', err);
+        });
+}
+
+var celda;
+
+
+
 
 
 var i = 0;
