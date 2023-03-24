@@ -170,7 +170,7 @@ function imprimir() {
     };
     document.write("</tbody>");
     document.write("</table>");
-    document.write(`<p>Grafica en: <a href="https://www.geogebra.org/geometry"> geogebra</a> <iframe src="https://www.geogebra.org/geometry" width="1500" height="500"> <iframe> geogebra</p>`);
+    document.write(`<p>Grafica en: <a href="https://www.geogebra.org/calculator"> geogebra</a> <iframe src="https://www.geogebra.org/geometry" width="1500" height="500"> <iframe> geogebra</p>`);
 
     celdas = document.querySelectorAll('.celda_XY');
 
